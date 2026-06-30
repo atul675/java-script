@@ -23,13 +23,45 @@ function addTwoNumbers(number1,number2){
 const result = addTwoNumbers(4,4)
 // console.log("Result: ", result);
 
-function loginUserMessage(username=){
+function loginUserMessage(Username=sam){
     if(username === undefined){
-        console.log("Please enter a username");
+        // console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
 }
 
 // console.log(loginUserMessage("atul"))
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500))
+const user = {
+    username:"atul",
+    Price: 200
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is $
+        {anyObject.Price}`);
+    
+}
+
+// handleObject(user)
+handleObject({
+    username:"sam",
+    price:300
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,400,500]));
+
